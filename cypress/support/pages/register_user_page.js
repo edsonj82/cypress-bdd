@@ -9,6 +9,10 @@ export default {
         cy.get('#user').type(name)
     },
 
+    fillEmail(email) {
+        cy.get('#user').type(email)
+    },
+
     checkErrorMessage(message) {
         cy.get('#errorMessageFirstName').should('have.text', message)
     }

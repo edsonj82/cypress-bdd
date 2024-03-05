@@ -17,11 +17,12 @@ Feature: Register user
         When I click on Register
         Then I see message "O campo e-mail deve ser prenchido corretamente"
 
-#  Scenario: campo e-mail invalido
-#     # Given I am on register screen
-#  And I fill name
-#     When I click on Register
-#     Then I see message "O campo e-mail deve ser preenchido corretamente" on register
+    Scenario: Login with invalid e-mail
+        Given I am on register screen
+        And I fill name
+        And I fill email invalid
+        When I click on Register
+        Then I see message "O campo e-mail deve ser prenchido corretamente"
 
 
 # Scenario: campo senha vazio

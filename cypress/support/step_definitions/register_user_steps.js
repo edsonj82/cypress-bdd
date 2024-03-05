@@ -5,7 +5,7 @@ import home_page from "../pages/home_page"
 import register_user_page from "../pages/register_user_page"
 
 const name = 'Edson José'
-
+const email = 'edson.jose@xpto.com'
 
 Given("I am on register screen", () => {
     home_page.acessRegister()
@@ -13,6 +13,10 @@ Given("I am on register screen", () => {
 
 Given("I fill name", () => {
     register_user_page.fillName(name)
+})
+
+Given("I fill email invalid", () => {
+    register_user_page.fillEmail(name)
 })
 
 When("I click on Register", () => {
