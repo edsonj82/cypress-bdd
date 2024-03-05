@@ -20,17 +20,17 @@ Feature: Register user
     Scenario: Login with invalid e-mail
         Given I am on register screen
         And I fill name
-        And I fill email invalid
+        And I fill an email invalid
         When I click on Register
         Then I see message "O campo e-mail deve ser prenchido corretamente"
 
 
-# Scenario: campo senha vazio
-#     # Given I am on register screen
-#     And I fill name
-#     And I fill e-mail "eduardo@gmail.com"
-#     When I click on Register
-#     Then I see message "O campo senha deve ter pelo menos 6 digitos" on register
+    Scenario: Login with empty password field
+        Given I am on register screen
+        And I fill name
+        And I fill email
+        When I click on Register
+        Then I see message "O campo senha deve ter pelo menos 6 dígitos"
 
 # Scenario: campo senha invalido
 #     # Given I am on register screen

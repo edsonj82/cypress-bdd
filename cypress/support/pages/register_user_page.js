@@ -10,7 +10,7 @@ export default {
     },
 
     fillEmail(email) {
-        cy.get('#user').type(email)
+        cy.get('#email').type(email)
     },
 
     checkErrorMessage(message) {

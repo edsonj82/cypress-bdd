@@ -15,7 +15,11 @@ Given("I fill name", () => {
     register_user_page.fillName(name)
 })
 
-Given("I fill email invalid", () => {
+Given("I fill email", () => {
+    register_user_page.fillEmail(email)
+})
+
+Given("I fill an email invalid", () => {
     register_user_page.fillEmail(name)
 })
 
