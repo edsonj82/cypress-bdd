@@ -4,8 +4,9 @@ import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor"
 import home_page from "../pages/home_page"
 import register_user_page from "../pages/register_user_page"
 
-const name = 'Edson José'
+const name = 'Edson'
 const email = 'edson.jose@xpto.com'
+const password = '123456'
 
 Given("I am on register screen", () => {
     home_page.acessRegister()
@@ -21,6 +22,14 @@ Given("I fill email", () => {
 
 Given("I fill an email invalid", () => {
     register_user_page.fillEmail(name)
+})
+
+Given("I fill password", () => {
+    register_user_page.fillPassword(password)
+})
+
+Given("I fill password invalid", () => {
+    register_user_page.fillPassword(name)
 })
 
 When("I click on Register", () => {

@@ -32,13 +32,13 @@ Feature: Register user
         When I click on Register
         Then I see message "O campo senha deve ter pelo menos 6 dígitos"
 
-# Scenario: campo senha invalido
-#     # Given I am on register screen
-#     And I fill name
-#     And I fill e-mail "eduardo@gmail.com"
-#     And I fill password "123"
-#     When I click on Register
-#     Then I see message "O campo senha deve ter pelo menos 6 digitos" on register
+    Scenario: Login with invalid password
+        Given I am on register screen
+        And I fill name
+        And I fill email
+        And I fill password invalid
+        When I click on Register
+        Then I see message "O campo senha deve ter pelo menos 6 dígitos"
 
 
 # Scenario: cadastro de usuario com sucesso

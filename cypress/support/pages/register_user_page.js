@@ -13,6 +13,10 @@ export default {
         cy.get('#email').type(email)
     },
 
+    fillPassword(password) {
+        cy.get('#password').type(password)
+    },
+
     checkErrorMessage(message) {
         cy.get('#errorMessageFirstName').should('have.text', message)
     }
