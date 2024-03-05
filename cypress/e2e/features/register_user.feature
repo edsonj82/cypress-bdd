@@ -24,7 +24,6 @@ Feature: Register user
         When I click on Register
         Then I see message "O campo e-mail deve ser prenchido corretamente"
 
-
     Scenario: Login with empty password field
         Given I am on register screen
         And I fill name
@@ -40,9 +39,8 @@ Feature: Register user
         When I click on Register
         Then I see message "O campo senha deve ter pelo menos 6 dígitos"
 
-
-# Scenario: cadastro de usuario com sucesso
-#     # Given I am on register screen
-#     And I fill my datas of register
-#     When I click on Register
-#     Then I see message success on register
+    Scenario: Register successfully
+        Given I am on register screen
+        And I fill my datas of register
+        When I click on Register
+        Then I see message success 

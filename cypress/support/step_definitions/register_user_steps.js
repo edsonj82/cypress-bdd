@@ -32,6 +32,12 @@ Given("I fill password invalid", () => {
     register_user_page.fillPassword(name)
 })
 
+Given("I fill my datas of register", () => {
+    register_user_page.fillName(name)
+    register_user_page.fillEmail(email)
+    register_user_page.fillPassword(password)
+})
+
 When("I click on Register", () => {
     register_user_page.realizeRegister()
 
@@ -39,4 +45,8 @@ When("I click on Register", () => {
 
 Then("I see message {string}", (message) => {
     register_user_page.checkErrorMessage(message)
+})
+
+Then("I see message success", () => {
+    register_user_page.checkSuccessMessage(name)
 })
