@@ -11,9 +11,9 @@ Given("I am on register screen", () => {
     home_page.acessRegister()
 })
 
-// And("I fill name", () => {
-//     register_user_page.fillName(name)
-// })
+Given("I fill name", () => {
+    register_user_page.fillName(name)
+})
 
 When("I click on Register", () => {
     register_user_page.realizeRegister()
