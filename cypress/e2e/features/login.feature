@@ -4,20 +4,20 @@ Feature: Login
     Quero fazer login na aplicação
     Para fazer um pedido de compra
 
-    Scenario: Login with empty email field
+    Background: Access register screen
         Given I am login screen
+
+    Scenario: Login with empty email field
         When I click on login
         Then I see the message "E-mail inválido."
 
     Scenario: Login with empty password field
-        Given I am login screen
         And I fill e-mail
         When I click on login
         Then I see the message "Senha inválida."
 
     # # credentials = email and password
     Scenario: Login successfully
-        Given I am login screen
         And I fill my credentials
         When I click on login
         Then I see success message
