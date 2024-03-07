@@ -3,6 +3,7 @@
 import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor"
 import home_page from "../pages/home_page"
 import register_user_page from "../pages/register_user_page"
+import 'cypress-mochawesome-reporter/cucumberSupport';
 
 const name = 'Edson'
 const email = 'edson.jose@xpto.com'
