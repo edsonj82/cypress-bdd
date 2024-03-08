@@ -2,7 +2,7 @@
 name: Run basic Test
 
 #momento de execução da pipeline
-on: 
+on:
   pull_request: 
     branches:[master]
 
