@@ -19,6 +19,10 @@ jobs:
       - name: Checkout/Clone do projeto
         uses: actions/checkout@v4
 
+      #exemplo de execução no temrinal
+      - name: instalar dependencias do projeto
+        run: echo Edson Jose dos Santos
+
       #exemplo de execução e config do projeto
       - name: Run tests
         uses: cypress-io/github-action@v6
