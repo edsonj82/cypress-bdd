@@ -4,7 +4,7 @@ name: Run basic Test
 #momento de execução da pipeline
 on: 
   schedule:
-    - cron: '0 18 * * 1-6'
+    - cron: '0 19 * * 6'
 
 jobs:
   # o que será feito na pipeline
